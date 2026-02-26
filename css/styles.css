@@ -84,6 +84,9 @@
 *::after {
   box-sizing: border-box;
 }
+#centerr {
+  text-align: center;
+}
 /* Button animation */
 .btn {
   border-radius: 25px;
