@@ -84,6 +84,40 @@
 *::after {
   box-sizing: border-box;
 }
+/* Button animation */
+.btn {
+  border-radius: 25px;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+/* Profile image styling */
+.img-profile {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-profile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(47, 111, 219, 0.35);
+}
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
