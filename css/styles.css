@@ -118,6 +118,16 @@
     transform: translateY(0);
   }
 }
+/* Fixed resume button on mobile */
+@media (max-width: 768px) {
+  .mobile-resume-btn {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 999;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
