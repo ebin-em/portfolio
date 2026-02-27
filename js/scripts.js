@@ -3,6 +3,7 @@
 */
 
 $(document).ready(function () {
+  console.log("Ebin");
 function myFunction() {
   alert("Working");
 }
